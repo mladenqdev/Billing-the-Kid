@@ -4,9 +4,129 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="slike/icon.png" type="image/x-icon">
    <title>Billing the Kid</title>
 </head>
 <body>
-   
+   <main class="main">
+      <header class="main-header">
+         <nav class="main-nav">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">My Profile</a></li>
+               <li><a href="#">This Month</a></li>
+               <li><a href="#">Settings</a></li>
+            </ul>
+         </nav>
+         <div class="image-container">
+            <img src="slike/menu.png" alt="">
+         </div>
+      </header>
+      <div class="main-titles">
+         <p>Welcome to</p>
+         <h1>Billing the Kid</h1>
+         <h3>Your personal financial manager. Online.</h3>
+      </div>
+   </main>
+   <section class="filters">
+      <div class="filters-content">
+         <a class="button" href="#">Startup</a>
+         <a class="button"href="#">Small bussiness</a>
+         <a class="button"href="#">Medium company</a>
+      </div>
+   </section>
+   <section class="showcase">
+      <div class="column">
+         <div class="image-container">
+            <img src="slike/fin1.jpg" alt="">
+         </div>
+         <div class="text-container">
+            <h2>Get your finances in order</h2>
+            <p>Choose a plan that fits your needs</p>
+         </div>
+      </div>
+      <div class="column">
+         <div class="text-container align-right">
+            <h2>Save more than ever</h2>
+            <p>Click to get fast and easy tips</p>
+         </div>
+         <div class="image-container">
+            <img src="slike/fin2.jpeg" alt="">
+         </div>
+      </div>
+      <div class="column">
+         <div class="image-container">
+            <img src="slike/fin3.jpg" alt="">
+         </div>
+         <div class="text-container">
+            <h2>We are on the same team!</h2>
+         <p>Our experts are just a call away.</p>
+         </div>
+      </div>
+   </section>
+   <section class="pricing">
+      <h2>Pricing</h2>
+      <p>Our services prices</p>
+      <table>
+         <thead>
+            <tr>
+               <th class="hidden"></th>
+               <th class="hidden"></th>
+               <th class="red" colspan="2">Price</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="hidden"></td>
+               <td class="hidden"></td>
+               <td class="blue">1 Year</td>
+               <td class="blue">1 Year</td>
+            </tr>
+            <tr>
+               <td class="red" rowspan="3">Location</td>
+               <td class="blue">Startup</td>
+               <td class="font-color">$3000</td>
+               <td class="font-color">$3000</td>
+            </tr>
+            <tr>
+               <td class="blue">Small business</td>
+               <td class="font-color">$3000</td>
+               <td class="font-color">$3000</td>
+            </tr>
+            <tr>
+               <td class="blue">Medium company</td>
+               <td class="font-color">$3000</td>
+               <td class="font-color">$3000</td>
+            </tr>
+         </tbody>
+      </table>
+      <a class="button" href="#">Check the prices</a>
+   </section>
+   <section class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+         <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183948656495!2d-73.9877312843436!3d40.75797874273792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2srs!4v1601504061142!5m2!1sen!2srs" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+         <form action="#" method="GET">
+            <div class="form-group group-1">
+               <select name="gender" id="gender">
+                  <option value="mrs">Mrs</option>
+                  <option value="mr">Mr</option>
+                </select>
+               <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+               <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+               <textarea id="message" name="message" rows="5" cols="50" placeholder="Your Message"></textarea>
+            </div>
+         </form>
+      </div>
+   </section>
+   <footer class="footer">
+      Copyright &copy; 2016 <span>Billing the Kid</span>
+   </footer>
 </body>
 </html>

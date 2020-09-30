@@ -1,0 +1,228 @@
+@mixin basic {
+	* {
+		margin: 0;
+      padding: 0;
+      font-family: $main-font;
+      color: $font-color;
+		-webkit-box-sizing: border-box;
+	  	   -moz-box-sizing: border-box;
+	  			box-sizing: border-box;
+	}
+}
+
+@mixin utility {
+   .button {
+      border: 1px solid $hover-color;
+      padding: 0.75rem 1.5rem;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: color 1s;
+
+      &:hover {
+         background-color: $hover-color;
+         color: #fff;
+      }
+   }
+
+   .align-right {
+      text-align: right;
+   }
+
+   h2 {
+      color: $dark_blue;
+      text-transform: uppercase;
+   }
+
+   .blue {
+      background: $dark_blue;
+   }
+
+   .red {
+      background: $main_red;
+   }
+
+   .red-font {
+      color: $main_red;
+   }
+
+   .hidden {
+      visibility: hidden;
+   }
+
+}
+
+@mixin medium-devices {
+	@media screen and (min-width: 770px) and (max-width: 1199px) {
+      .button {
+         padding: 0.5rem 1rem;
+         font-size: 0.9rem;
+      }
+
+      .filters {
+         padding: 2.5rem 10rem;
+         display: flex;
+         justify-content: center;
+         
+         &-content {
+            margin-right: 0;
+            a {
+               margin-right: 1.5rem;
+
+               &:last-child {
+                  margin-right: 0;
+               }
+            }
+         }
+      }
+
+      .showcase {
+
+         .column {
+            width: 70%;
+         }
+      }
+
+      .pricing {
+         padding: 3rem 10rem;
+      }
+
+      .contact {
+
+         &-content {
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem auto 1rem;
+
+            .google-map {
+               width: 55%;
+               margin-bottom: 2rem;
+               iframe {
+                  height: 300px;
+               }
+            }
+
+            form {
+               width: 100%;
+            }
+         }
+      }
+
+   }
+}
+
+@mixin small-devices {
+	@media screen and (max-width: 769px) {
+      .main {
+         height: auto;
+         background: #000;
+         &-header {
+            flex-direction: column-reverse;
+
+            .image-container {
+               width: 100%;
+               display: flex;
+               justify-content: flex-start;
+               padding: 0.5rem;
+            }
+            .main-nav {
+               width: 100%;
+               ul {
+                  flex-direction: column;
+
+                  li {
+                     margin-left: 0;
+                     margin-top: 2rem;
+                     &:last-child {
+                        margin-right: 0;
+                        margin-bottom: 2rem;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      .filters {
+         padding: 2.5rem 0;
+         display: flex;
+         justify-content: center;
+         
+         &-content {
+            margin-right: 0;
+            a {
+               margin-right: 1rem;
+
+               &.button {
+                  font-size: 0.8rem;
+               }
+            }
+         }
+      }
+
+      .showcase {
+
+         .column {
+            flex-direction: column;
+            align-items: center;
+
+            &:nth-child(2) {
+               flex-direction: column-reverse;
+               }
+
+            .text-container {
+                width: 100%;
+                text-align: center;
+                margin: 2rem 0;
+            }
+
+            .image-container {
+               width: 60%;
+            }
+         }
+      }
+
+      .pricing {
+         padding: 3rem 2rem;
+         table {
+            display: none;
+         }
+         a {
+            display: inline-block;
+            margin-top: 2rem;
+         }
+      }
+      .contact {
+
+         &-content {
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem auto 1rem;
+            width: 90%;
+
+            .google-map {
+               width: 75%;
+               margin-bottom: 2rem;
+               iframe {
+                  height: 300px;
+               }
+            }
+
+            form {
+               width: 100%;
+
+               .group-1 {
+                  flex-direction: column;
+               }
+
+               select, input[type=text] {
+                  width: 100%;
+               }
+
+               select {
+                  margin-bottom: 1.5rem;
+               }
+
+            }
+         }
+      }
+   }
+}
